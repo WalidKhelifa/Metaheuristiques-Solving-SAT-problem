@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="931.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.psoTestController">
+   <children>
+      <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="38.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/ARTIFICIAL_INTELLIGENCE-512.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="98.0" layoutY="26.0" text="Métaheuristique" textFill="#2262c6">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="415.0" layoutY="22.0" opacity="0.5" prefHeight="30.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-radius: 50px; -fx-border-color: #AEB2C3;">
+         <font>
+            <Font name="Berlin Sans FB" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b9b6b6" />
+         </effect>
+      </TextField>
+      <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="873.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8_slider_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="346.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/018_098_arrow_back_reply-512.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="348.0" layoutY="24.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: #66000000 #66000000;" />
+      <TextField fx:id="add_file" editable="false" layoutX="541.0" layoutY="91.0" promptText="Selectionner un fichier" />
+      <Button layoutX="541.0" layoutY="91.0" mnemonicParsing="false" onAction="#AddFile" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: #66000000;" />
+      <Label layoutX="409.0" layoutY="96.0" text="Importer un fichier" />
+      <Label layoutX="266.0" layoutY="159.0" text="Nbswarm" />
+      <Label layoutX="609.0" layoutY="159.0" text="C1" />
+      <Label layoutX="524.0" layoutY="262.0" text="----  Résultat obtenu ----">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" editable="false" layoutX="445.0" layoutY="154.0" prefHeight="27.0" prefWidth="127.0" />
+      <TextField fx:id="t2" editable="false" layoutX="750.0" layoutY="154.0" prefHeight="27.0" prefWidth="127.0" />
+      <Button layoutX="299.0" layoutY="248.0" mnemonicParsing="false" onAction="#Execute" prefHeight="27.0" prefWidth="73.0" style="-fx-background-color: #2262C6; -fx-background-radius: 10;" text="Executer" textFill="WHITE" />
+      <TextField fx:id="t5" editable="false" layoutX="538.0" layoutY="298.0" />
+      <TextField fx:id="t6" editable="false" layoutX="538.0" layoutY="349.0" />
+      <Label layoutX="318.0" layoutY="303.0" text="Taux de satisfiabilité" />
+      <Label layoutX="318.0" layoutY="354.0" text="Temps d'éxecusion(s)" />
+      <TextArea fx:id="tAresult" editable="false" layoutX="473.0" layoutY="388.0" prefHeight="77.0" prefWidth="322.0" />
+      <Label layoutX="348.0" layoutY="418.0" prefHeight="17.0" prefWidth="90.0" text="Solution" />
+      <Label layoutX="266.0" layoutY="202.0" text="W" />
+      <TextField fx:id="t3" editable="false" layoutX="445.0" layoutY="197.0" prefHeight="27.0" prefWidth="127.0" />
+      <Label layoutX="609.0" layoutY="202.0" text="C2" />
+      <TextField fx:id="t4" editable="false" layoutX="750.0" layoutY="197.0" prefHeight="27.0" prefWidth="127.0" />
+      <AnchorPane layoutX="-1.0" layoutY="75.0" prefHeight="506.0" prefWidth="240.0" styleClass="sidebar">
+         <children>
+            <Pane layoutX="30.0" layoutY="37.0" prefHeight="30.0" prefWidth="180.0" styleClass="labbtn">
+               <children>
+                  <Label alignment="CENTER" layoutX="47.0" layoutY="6.0" text="Résultat PSO" textFill="#2262c6">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" layoutX="8.0" layoutY="128.0" prefHeight="44.0" prefWidth="230.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/computer-technology-screen-display-monitor-512.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#affichResult" prefHeight="41.0" prefWidth="160.0" style="-fx-background-radius: 20 0 0 0; -fx-background-color: #2262C6;" text="Afficher les Résultats" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="8.0" layoutY="179.0" prefHeight="44.0" prefWidth="230.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/online-booking.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#Tester" prefHeight="41.0" prefWidth="151.0" style="-fx-background-radius: 20 0 0 0; -fx-background-color: #2262C6;" text="Tester l'algorithme" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="231.0" prefHeight="44.0" prefWidth="222.0" styleClass="sidebar-btn-text">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button layoutX="559.0" layoutY="492.0" mnemonicParsing="false" onAction="#passingData" prefHeight="27.0" prefWidth="151.0" style="-fx-background-color: #2262C6; -fx-background-radius: 10;" text="Afficher le graphe" textFill="WHITE" />
+   </children>
+</AnchorPane>

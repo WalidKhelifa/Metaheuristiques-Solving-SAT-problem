@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.grapheGAController">
+   <children>
+      <BarChart fx:id="graphe" layoutX="-1.0" prefHeight="400.0" prefWidth="600.0" title="Taux de clause satisfaite des fichiers UF75">
+        <xAxis>
+          <CategoryAxis label="Numero de fichier" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Taux de satisfiabilité" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

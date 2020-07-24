@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="931.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="74.0" prefHeight="506.0" prefWidth="240.0" styleClass="sidebar">
+         <children>
+            <Pane layoutX="30.0" layoutY="37.0" prefHeight="30.0" prefWidth="180.0" styleClass="labbtn">
+               <children>
+                  <Label alignment="CENTER" layoutX="66.0" layoutY="5.0" text="Accueil" textFill="#2262c6">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="116.0" prefHeight="44.0" prefWidth="182.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/29-512.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#GA" prefHeight="41.0" prefWidth="147.0" style="-fx-background-radius: 20 0 0 0; -fx-background-color: #2262C6;" text="Résultat Génétique" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="160.0" prefHeight="44.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/area-chart-graph-visualisation-512-2.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#BSO" prefHeight="41.0" prefWidth="109.0" style="-fx-background-radius: 20 0 0 0; -fx-background-color: #2262C6;" text="Résultat BSO" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="204.0" prefHeight="44.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/area-chart-graph-visualisation-512.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#PSO" prefHeight="41.0" prefWidth="103.0" style="-fx-background-radius: 20 0 0 0; -fx-background-color: #2262C6;" text="Résultat PSO" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="248.0" prefHeight="44.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/pie-chart-data-visualisation-512-2.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#comparaison" prefHeight="41.0" prefWidth="105.0" style="-fx-background-radius: 20 0 0 0; -fx-background-color: #2262C6;" text="Comparaison" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="296.0" prefHeight="44.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="38.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/ARTIFICIAL_INTELLIGENCE-512.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="98.0" layoutY="26.0" text="Métaheuristique" textFill="#2262c6">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="415.0" layoutY="22.0" opacity="0.5" prefHeight="30.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-radius: 50px; -fx-border-color: #AEB2C3;">
+         <font>
+            <Font name="Berlin Sans FB" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b9b6b6" />
+         </effect>
+      </TextField>
+      <Label alignment="CENTER" layoutX="290.0" layoutY="140.0" text="QUICK ACCESS" textFill="#2262c6">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="287.0" layoutY="196.0" prefHeight="114.0" prefWidth="182.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+         <effect>
+            <DropShadow color="#9a9696" />
+         </effect>
+         <children>
+            <Button layoutY="-2.0" mnemonicParsing="false" onAction="#GA" prefHeight="114.0" prefWidth="180.0" style="-fx-background-radius: 0px 50px 0px 0px; -fx-background-color: #ffffff;" />
+            <Label alignment="CENTER" layoutX="27.0" layoutY="79.0" textFill="#2262c6">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="65.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/29-512.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="31.0" layoutY="79.0" textFill="#2262c6">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="79.0" text="Résultat Génétique" textFill="#2262c6">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="58.0" layoutY="24.0" mnemonicParsing="false" onAction="#GA" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #66000000;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="495.0" layoutY="197.0" prefHeight="114.0" prefWidth="182.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+         <effect>
+            <DropShadow color="#9a9696" />
+         </effect>
+         <children>
+            <Button layoutY="-2.0" mnemonicParsing="false" onAction="#BSO" prefHeight="114.0" prefWidth="180.0" style="-fx-background-radius: 0px 50px 0px 0px; -fx-background-color: #ffffff;" />
+            <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="62.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/area-chart-graph-visualisation-512-2.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="79.0" text="Résultat BSO" textFill="#2262c6">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="55.0" layoutY="25.0" mnemonicParsing="false" onAction="#BSO" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #66000000;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="702.0" layoutY="197.0" prefHeight="114.0" prefWidth="182.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+         <effect>
+            <DropShadow color="#9a9696" />
+         </effect>
+         <children>
+            <Button layoutY="-2.0" mnemonicParsing="false" onAction="#PSO" prefHeight="114.0" prefWidth="180.0" style="-fx-background-radius: 0px 50px 0px 0px; -fx-background-color: #ffffff;" />
+            <ImageView fitHeight="44.0" fitWidth="59.0" layoutX="68.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/area-chart-graph-visualisation-512.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="47.0" layoutY="79.0" text="Résultat PSO" textFill="#2262c6">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="61.0" layoutY="23.0" mnemonicParsing="false" onAction="#PSO" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #66000000;" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="291.0" layoutY="338.0" text="Meilleurs résultats obtenu">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="285.0" layoutY="464.0" prefHeight="30.0" prefWidth="602.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../images/29-512.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="75.0" text="Génétique" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="58.0" text=" UF75" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="165.0" text="99,28%" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="134.0" text="1,8s" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="287.0" layoutY="506.0" prefHeight="30.0" prefWidth="596.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../images/area-chart-graph-visualisation-512.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="36.0" text="PSO" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="137.0" text="UF75" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="83.0" text="98,66%" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="177.0" text="           1,32s" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="548.0" layoutY="388.0" text="Taux de satisfaisabilité" textFill="#545352">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="448.0" layoutY="388.0" prefHeight="18.0" prefWidth="55.0" text="Fichier" textFill="#545352">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="388.0" text="Algorithme" textFill="#545352">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="750.0" layoutY="388.0" text="Temps moyenne (s)" textFill="#545352">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="893.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8_pin_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="42.0" layoutX="893.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8_pin_50px.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="285.0" layoutY="420.0" prefHeight="31.0" prefWidth="630.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../images/area-chart-graph-visualisation-512-2.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="39.0" text="BSO" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="134.0" text="UF75" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="68.0" text="    99,81%" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="236.0" text="   2,8s" textFill="#aeb2c3">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="893.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8_pin_50px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
